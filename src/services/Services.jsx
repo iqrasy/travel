@@ -4,6 +4,8 @@ import styled from "styled-components";
 import ServiceCarousel from "./ServiceCarousel.jsx";
 import { Carousel } from "react-bootstrap";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import animation2 from "../animation2.json";
 
 const textVariant = {
 	initial: {
@@ -76,6 +78,9 @@ const Services = () => {
 						historical insights, and let us take care of your air tickets for a
 						hassle-free journey. Trust us to make your travel dreams a reality
 					</p>
+					<Animation>
+						<Lottie animationData={animation2} loop={false} />
+					</Animation>
 				</motion.div>
 			</Pitch>
 			<Filters>
@@ -145,8 +150,44 @@ const Services = () => {
 
 export default Services;
 
+const Animation = styled.div`
+	width: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+	@media only screen and (min-width: 1024px) {
+		width: 30vh;
+	}
+
+	@media only screen and (min-width: 600px) and (max-width: 768px) {
+		width: 30vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+`;
+
 const Div = styled.div`
 	margin-bottom: 10rem;
+
+	@media only screen and (min-width: 600px) and (max-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
 `;
 
 const Main = styled.div`
@@ -163,6 +204,15 @@ const Main = styled.div`
 		object-fit: cover;
 		border-radius: 0.5rem;
 	}
+
+	@media only screen and (min-width: 1024px) {
+		img {
+			margin-top: 0.7rem;
+			height: 22rem;
+			object-fit: cover;
+			border-radius: 0.5rem;
+		}
+	}
 `;
 
 const Info = styled.div`
@@ -171,11 +221,36 @@ const Info = styled.div`
 `;
 
 const Pitch = styled.div`
-	padding: 1rem;
+	padding: 0 1rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+
+	@media only screen and (min-width: 1024px) {
+		width: 70vh;
+		font-size: 1.2rem;
+	}
+
+	@media only screen and (min-width: 600px) and (max-width: 768px) {
+		width: 70vh;
+	}
 `;
 
 const Slider = styled.div`
 	margin-bottom: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media only screen and (min-width: 1024px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
 `;
 
 const Filters = styled.div`

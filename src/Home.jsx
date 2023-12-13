@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import kaaba from "./assets/kaaba.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import animation from "./animation.json";
 
 const textVariant = {
 	initial: {
@@ -36,12 +38,17 @@ const Home = () => {
 						</h3>
 					</motion.div>
 				</Slogan>
-				<Button>
-					<p>View our services</p>
-					<button onClick={() => navigate("/services")}>
-						<IoIosArrowRoundForward />
-					</button>
-				</Button>
+				<motion.div variants={textVariant} initial="initial" animate="animate">
+					<Button>
+						<p>View our services</p>
+						<button onClick={() => navigate("/services")}>
+							<IoIosArrowRoundForward />
+						</button>
+					</Button>
+				</motion.div>
+				<Animation>
+					<Lottie animationData={animation} loop={false} />
+				</Animation>
 			</ContentWrapper>
 			<motion.div variants={textVariant} initial="initial" animate="animate">
 				<Img src={kaaba} alt="kaaba" />
@@ -52,12 +59,38 @@ const Home = () => {
 
 export default Home;
 
+const Animation = styled.div`
+	width: 25vh;
+
+	@media only screen and (min-width: 1024px) {
+		width: 25vh;
+	}
+`;
+
 const Img = styled.img`
 	position: absolute;
 	bottom: 5rem;
 	width: 100%;
 	max-width: 100vw;
 	height: auto;
+
+	@media only screen and (min-width: 600px) and (max-width: 768px) {
+		width: 85%;
+		max-width: 85%;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		width: 85%;
+		max-width: 85%;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		width: 55%;
+		max-width: 45%;
+		margin: 0 auto;
+	}
 `;
 
 const ContentWrapper = styled.div`

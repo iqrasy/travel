@@ -7,7 +7,6 @@ import Home from "./Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./Contact";
 
-
 const App = () => {
 	return (
 		<>
@@ -22,7 +21,5 @@ const App = () => {
 		</>
 	);
 };
-
-// 6045.15
 
 export default App;

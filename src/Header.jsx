@@ -13,7 +13,7 @@ const Header = () => {
 			<button onClick={() => navigate("/contact")} className="button-link">
 				Contact Us
 			</button>
-			<button className="translator">Urdu</button>
+			{/* <button className="translator">Urdu</button> */}
 		</Main>
 	);
 };
@@ -33,12 +33,12 @@ const Main = styled.div`
 		cursor: pointer;
 	}
 
-	button.translator {
+	/* button.translator {
 		background-color: transparent;
 		outline: none;
 		border: none;
 		margin: 0 1rem;
-	}
+	} */
 
 	button.button-link {
 		position: relative;
