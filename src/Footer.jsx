@@ -11,9 +11,8 @@ const Footer = () => {
 					<h4>AL SHAFEE</h4>
 				</div>
 				<div className="buttons-container">
-					<button onClick={() => navigate("/about")}>About us</button>
-					<button onClick={() => navigate("/products")}>Products</button>
 					<button onClick={() => navigate("/services")}>Services</button>
+					<button onClick={() => navigate("/contact")}>Contact Us</button>
 				</div>
 			</FooterContainer>
 		</Main>
@@ -31,6 +30,7 @@ const Main = styled.div`
 	width: 100%;
 	height: 10vh;
 	bottom: 0;
+	z-index: 10;
 
 	.buttons-container {
 		display: flex;
@@ -44,6 +44,8 @@ const Main = styled.div`
 		background-color: transparent;
 		margin: 1rem;
 		color: #fff;
+		font-weight: 100;
+		font-size: 0.8rem;
 
 		&:hover {
 			background-color: grey;
@@ -63,6 +65,8 @@ const FooterContainer = styled.div`
 	margin: 1rem auto;
 
 	h4 {
+		font-weight: 100;
 		text-align: center;
+		font-size: 0.9rem;
 	}
 `;

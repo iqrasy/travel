@@ -10,8 +10,8 @@ const Header = () => {
 			<button onClick={() => navigate("/services")} className="button-link">
 				Services
 			</button>
-			<button onClick={() => navigate("/about")} className="button-link">
-				Contact Us{" "}
+			<button onClick={() => navigate("/contact")} className="button-link">
+				Contact Us
 			</button>
 			<button className="translator">Urdu</button>
 		</Main>
@@ -23,8 +23,13 @@ export default Header;
 const Main = styled.div`
 	display: flex;
 	margin: 1.3rem;
+	font-size: 0.8rem;
+	font-weight: 100;
+	white-space: nowrap;
 
-	h1 {
+	h3 {
+		font-weight: 200;
+		font-size: 1.5rem;
 		cursor: pointer;
 	}
 

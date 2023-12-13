@@ -1,9 +1,12 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import Services from "./Services";
+import Services from "./services/Services";
 import GlobalStyle from "./GlobalStyle";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./Contact";
+
 
 const App = () => {
 	return (
@@ -12,13 +15,14 @@ const App = () => {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				{/* <Route path="/about" element={<About />} /> */}
-				{/* <Route path="/products" element={<Products />} /> */}
+				<Route path="/contact" element={<Contact />} />
 				<Route path="/services" element={<Services />} />
 			</Routes>
 			<Footer />
 		</>
 	);
 };
+
+// 6045.15
 
 export default App;
