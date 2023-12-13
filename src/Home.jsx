@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import kaaba from "./assets/kaaba.png";
+import { kaaba } from "./assets/kaaba/index.jsX";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
