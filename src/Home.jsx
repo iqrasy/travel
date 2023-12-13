@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animation from "./animation.json";
-// import { kaaba } from "./assets/kaaba/index";
+import { kaaba } from "./assets/kaaba/index";
 
 const textVariant = {
 	initial: {
@@ -51,7 +51,7 @@ const Home = () => {
 				</Animation>
 			</ContentWrapper>
 			<motion.div variants={textVariant} initial="initial" animate="animate">
-				<Img src="./assets/kaaba/index" alt="kaaba" />
+				<Img src={kaaba} alt="kaaba" />
 			</motion.div>
 		</div>
 	);
