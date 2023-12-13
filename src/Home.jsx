@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animation from "./animation.json";
-import { kaaba } from "./assets/kaaba/index.jsx";
+import { kaaba } from "../src/assets/kaaba/index";
 
 const textVariant = {
 	initial: {
