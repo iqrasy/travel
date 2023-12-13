@@ -89,22 +89,28 @@ const Services = () => {
 					onChange={(e) => handleLocation(e.target.value)}
 				>
 					<option value="">location</option>
-					{uniqueLocations.map((location, index) => (
-						<option key={index} value={location}>
-							{location}
-						</option>
-					))}
+					{uniqueLocations.map(
+						(location, index) =>
+							location && (
+								<option key={index} value={location}>
+									{location}
+								</option>
+							)
+					)}
 				</select>
 				<select
 					value={selectCategory}
 					onChange={(e) => handleCategory(e.target.value)}
 				>
 					<option value="">category</option>
-					{uniqueCategories.map((category, index) => (
-						<option key={index} value={category}>
-							{category}
-						</option>
-					))}
+					{uniqueCategories.map(
+						(category, index) =>
+							category && (
+								<option key={index} value={category}>
+									{category}
+								</option>
+							)
+					)}
 				</select>
 			</Filters>
 			{isFilterSelected ? (
