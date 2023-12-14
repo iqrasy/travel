@@ -69,9 +69,9 @@ const Animation = styled.div`
 
 const Img = styled.img`
 	position: absolute;
-	bottom: 5rem;
-	width: 100%;
-	max-width: 100vw;
+	bottom: 4rem;
+	width: 90%;
+	max-width: 90vw;
 	height: auto;
 
 	@media only screen and (min-width: 600px) and (max-width: 768px) {
