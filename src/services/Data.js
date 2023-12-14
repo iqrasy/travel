@@ -1,5 +1,5 @@
 import { alansar } from "../assets/al ansar golden/index.jsx";
-import { alkiswa } from "../assets/al kiswa tower/index.jsX";
+import { alkiswa } from "../assets/al kiswa tower/index.jsx";
 import { artal } from "../assets/artal international/index.jsx";
 import { badr } from "../assets/badr al massa/index.jsx";
 import { dar } from "../assets/dar al taqwa/index.jsx";
