@@ -8,7 +8,7 @@ const Footer = () => {
 		<Main>
 			<FooterContainer>
 				<div>
-					<h4>AL SHAFEE</h4>
+					<h4>AL SHAFI</h4>
 				</div>
 				<div className="buttons-container">
 					<button onClick={() => navigate("/services")}>Services</button>

@@ -6,7 +6,7 @@ const Header = () => {
 
 	return (
 		<Main>
-			<h3 onClick={() => navigate("/")}>AL SHAFEE</h3>
+			<h3 onClick={() => navigate("/")}>AL SHAFI</h3>
 			<button onClick={() => navigate("/services")} className="button-link">
 				Services
 			</button>
